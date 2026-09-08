@@ -613,24 +613,9 @@ footer{ border-top:1px solid var(--border); padding:48px 0 32px; }
 .term-toggle svg{ width:18px; height:18px; stroke:#08090D; }
 .term-body{ padding:14px 16px; font-family:var(--font-mono); font-size:0.76rem; color:var(--cyan); line-height:1.8; }
 .term-body .out{ color:var(--text-1); }
-@media (max-width:640px){
-  .term-widget{
-    display:block;
-    width:220px;
-    left:12px;
-    bottom:12px;
-  }
-
-  .term-body{
-    font-size:0.68rem;
-  }
-
-  .term-toggle{
-    width:36px;
-    height:36px;
-    top:-38px;
-    right:10px;
-  }
+/* Hide floating terminal on all devices */
+.term-widget{
+  display:none !important;
 }
 
 /* ============================================================
